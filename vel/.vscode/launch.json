@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-VelApplication<vel>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.team.vel.VelApplication",
+            "projectName": "vel",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-VelApplication<vel>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.team.vel.VelApplication",
+            "projectName": "vel",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

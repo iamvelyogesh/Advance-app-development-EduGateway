@@ -38,24 +38,52 @@ Your users should be able to:
 
 ## Building your project
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+## Frontend Setup
+### Step 1: Clone the Repository
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+```bash
+git clone [frontend_repository_url]
+cd frontend
+```
+### Step 2: Install Dependencies
+```
+npm install
+```
+### Step 3: Run Development Server
+```
+npm run dev
+```
 
-## Deploying your project
+Now, your frontend development server is up and running. You can access it via http://localhost:your_port.
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+## Backend Setup
+### Step 1: Install Maven
+Download and install Maven from the official website: [Apache Maven Installation](https://maven.apache.org/install.html)
+
+### Install Dependencies
+Ensure that you have the following dependencies installed:
+
+- Spring Boot DevTools
+- Spring Boot Actuator
+- Lombok
+- PostgreSQL Driver
+- Spring Data JPA
+- Spring Security
+- 
+Add these dependencies to your `pom.xml` file or include them via Maven command line.
+
+### Step 3: Run the Backend
+Navigate to your backend directory and run the following command:
+
+```bash
+mvn spring-boot:run
+```
+
+Your backend server should now be running and accessible via http://localhost:backend_port.
+
+With both frontend and backend set up and running, your project is ready for development and testing.
 
 ## Get Started
 
@@ -69,6 +97,7 @@ Stay updated with the latest news and developments by following us on social med
 - [Twitter](https://twitter.com/cbvelyogesh)
 - [Facebook](https://www.facebook.com/vel.yogesh/)
 - [Instagram](https://www.instagram.com/iamvelyogesh)
+
 We value your feedback and strive to continuously enhance your experience with EduGateway.
 
 Start your journey with EduGateway today and pave the way for a brighter future! 🎓✨

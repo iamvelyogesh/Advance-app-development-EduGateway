@@ -19,7 +19,7 @@ For users, EduGateway offers a straightforward process to apply for college cour
 1. Apply for Courses: Browse through our extensive list of colleges and courses, and apply with just a few clicks.
 2. Secure Payments: Make payments securely through our platform, providing peace of mind throughout the process.
 
-##Live Dashboard
+## Live Dashboard
 The hallmark of EduGateway is its live dashboard, providing real-time updates and insights for both administrators and users. With dynamic visuals and intuitive navigation, the dashboard enhances the overall experience, making EduGateway a pioneer in online college admissions.
 
 ## The challenge

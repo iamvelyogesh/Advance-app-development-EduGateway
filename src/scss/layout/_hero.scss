@@ -1,0 +1,16 @@
+main {
+  height: 100vh;
+  display: flex;
+  gap: 5rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+}

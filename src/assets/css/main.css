@@ -1,0 +1,541 @@
+
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap";
+
+@keyframes lds-hourglass {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* font-size: 62.5%; */
+}
+
+/* CSS for input[type="text"] */
+input[type="text"].vy {
+    width: 100%; /* Adjust width as needed */
+    padding: 10px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Border radius */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width */
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+/* Placeholder styling */
+input[type="text"].vy::placeholder {
+    color: #999; /* Placeholder text color */
+}
+
+
+/* body {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-image: url("/src/assets/images/signup.jpg");
+    background-size: cover;
+    background-color: #ff7a7a;
+} */
+.login-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    z-index: -1;
+  }
+.login-image1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    z-index: -1;
+  }
+.login-image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    z-index: -1;
+  }
+.login-image3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    z-index: -1;
+  }
+
+/* .bg{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-image: url("/src/assets/images/signup.jpg");
+    background-size: cover;
+    background-color: #ff7a7a;
+} */
+.header {
+    color: #fff;
+}
+.div-table__main {
+    padding: 20px;
+  }
+  
+  .form-container {
+    margin-bottom: 20px;
+  }
+  
+  .form-container input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px; 
+  }
+  
+  .form-container button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .div-table__row {
+    margin-bottom: 20px; 
+  }
+  
+  .div-table__text {
+    margin-bottom: 10px; 
+  }
+  
+  .register-button,
+  .do-payment-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .do-payment-button {
+    background-color: #dc3545; 
+  }
+  
+  .commons__green {
+    color: #28a745; 
+  }
+
+.header .heading-primary {
+    font-size: 6rem;
+    line-height: 6.5rem;
+}
+.header .heading-primary1 {
+    font-size: 6rem;
+    line-height: 6.5rem;
+    margin-top: 30%;
+}
+
+.header .subheading {
+    font-size: 1.6rem;
+}
+.t{
+    margin-bottom: 10%;
+}
+
+.banner {
+    background-color: #6055a5;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.banner-text--primary {
+    font-weight: 600;
+}
+
+.banner-text--secondary {
+    font-weight: 400;
+}
+
+.form {
+    background-color: #fff;
+}
+
+.form input {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.form button {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.form-terms--text {
+    color: #b9b6d3;
+}
+
+.form-terms--link {
+    text-decoration: none;
+    color: #ff7a7a;
+    font-weight: 600;
+}
+
+.form .error-text {
+    color: #ff7a7a;
+    font-style: italic;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+}
+
+.form-submiting-text {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.form-success-text {
+    font-size: 2rem;
+    color: #fff;
+}
+
+@media screen and (max-width: 1040px) {
+    .header .heading-primary {
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+    .header .subheading {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header .heading-primary {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    gap: 5rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.header {
+    max-width: 55rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form__container .form {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 6px 0px 0px rgba(62, 60, 73, 0.4);
+}
+
+.form__container .form__input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form__container .form__input-box input {
+    position: relative;
+    padding: 1.4rem;
+    border: 1px solid #b9b6d3;
+    border-radius: 5px;
+}
+
+.form__container .form__input-box input.error-border {
+    background-image: url("/images/icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    color: #ff7a7a;
+}
+
+.form__container .form__input-box input:focus {
+    outline: none;
+    border: 2px solid #3e3c49;
+}
+
+.form__container .form__input-box .error-border {
+    border: 2px solid #ff7a7a;
+}
+
+.form__container .form__input-box .error-text {
+    text-align: right;
+}
+
+.form__container .form__input-box .icon-error {
+    height: 30px;
+}
+
+.form__container .form button {
+    position: relative;
+    border-radius: 1rem;
+    border: none;
+    background-color: #38cc8c;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.form__container .form button:hover {
+    background-color: rgba(56, 204, 140, 0.8);
+    transform: translateY(-2px);
+}
+
+.form__container .form button:active {
+    transform: translateY(1px);
+}
+
+.form__container .form button:disabled {
+    background-color: #3e3c49;
+    transform: translateY(0);
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+.form__container .form-terms {
+    text-align: center;
+}
+
+.form__container .form-terms--link:link,
+.form__container .form-terms--link:visited {
+    margin-left: 0.4rem;
+}
+
+.form__container .form-terms--link:link:active,
+.form__container .form-terms--link:link:hover,
+.form__container .form-terms--link:visited:active,
+.form__container .form-terms--link:visited:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 1000px) {
+    .form__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.banner {
+    padding: 1.4rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0px 6px 0px 0px rgba(62, 60, 73, 0.4);
+}
+
+.banner-text--secondary {
+    margin-left: 0.4rem;
+}
+
+@media screen and (max-width: 600px) {
+    .banner {
+        padding: 2.4rem 1.4rem;
+    }
+    .banner-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-text--secondary {
+        margin-left: 0;
+    }
+}
+
+.backdrop {
+    position: absolute;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3e3c49;
+    opacity: 0.6;
+}
+
+.modal-overlay {
+    position: absolute;
+    width: 500px;
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.modal-overlay .icon-modal-close {
+    align-self: flex-end;
+    height: 40px;
+}
+
+.modal-overlay .icon-modal-close:hover,
+.modal-overlay .icon-modal-close:active {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.modal-overlay p {
+    font-size: 1.6rem;
+}
+
+@media screen and (max-width: 580px) {
+    .modal-overlay {
+        width: 90%;
+    }
+}
+
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    align-self: center;
+}
+
+.lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #fff;
+    border-color: #fff rgba(0, 0, 0, 0) #fff rgba(0, 0, 0, 0);
+    animation: lds-hourglass 1.2s infinite;
+}
+.form__input-box1 {
+    position: relative;
+  }
+  
+  .form__input-box1 label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+  }
+  
+  /* .password-strength {
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .password-strength-bar {
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .strength-0 {
+    background-color: #ff7a7a;
+    width: 20%;
+    margin-left: 43%;
+    margin-top: -2%;
+  }
+  
+  .strength-1 {
+    background-color: #f7df63;
+    width: 40%; 
+    margin-left: 43%;
+    margin-top: -2%;
+  }
+  
+  .strength-2 {
+    background-color: #38cc8c;
+    width: 55%; 
+    margin-left: 43%;
+    margin-top: -2%;
+  }
+  
+  .password-strength-text {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 14px;
+    color: #666;
+    display: none;
+  }
+  input[type="password"]:focus + .password-strength .password-strength-bar,
+  input[type="password"]:focus + .password-strength .password-strength-text {
+    display: block;
+  } */
+
+  
+.form__input-box select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    /* font-size: 16px; */
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+  
+  .form__input-box select option {
+    padding: 10px;
+    /* font-size: 16px; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+
+  

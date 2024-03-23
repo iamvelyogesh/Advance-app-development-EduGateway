@@ -1,0 +1,247 @@
+$color-primary: dodgerblue;
+$bp-largest: 75em;
+$bp-large: 55em;
+$bp-medium: 41em;
+
+.containerpp {
+  display: grid;
+  grid-template-columns: 22rem calc(100vw - 22rem);
+  grid-template-rows: 8rem calc(100vh - 8rem);
+  background-color: #FFF;
+  height: 400px;
+}
+
+
+
+
+.highlights {
+  display: grid;
+  grid-column: center-start / col-end 6;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(19.5rem, 1fr));
+}
+
+.highlights__item {
+  border: .3rem;
+  box-shadow: 0 1rem 2rem rgba(#747474, .1);
+  display: grid;
+  grid-row-gap: 1.5rem;
+  grid-template-columns: max-content;
+  grid-template-rows: repeat(3, min-content);
+  justify-content: center;
+  justify-items: center;
+  padding: 2rem;
+  transition: all .2s ease-in;
+  height: 250%;
+  margin-top: 50px;
+}
+
+.highlights__item:hover {
+  box-shadow: 0 1.5rem 3rem rgba(#747474, .1);
+  transform: scale(1.02);
+}
+
+.highlights__img {
+  border-radius: 50%;
+  height: 6rem;
+}
+
+.highlights__text {
+  font-size: 1.8rem;
+}
+
+.highlights__text--primary {
+  color: darken(#747474, 10%);
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.highlights__text--secondary {
+  border-top: .1rem solid rgba(#747474, .1);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.overview {
+  grid-column: col-start 8 / center-end;
+}
+
+.overview__item {
+  align-items: center;
+  background-image: linear-gradient(to bottom right, purple, black);
+  border-radius: .3rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+}
+
+.overview__text {
+  color: #FFF;
+  font-weight: 300;
+}
+
+.overview__text--primary {
+  font-size: 3rem;
+}
+
+.overview__text--secondary {
+  color: rgba(#FFF, .8);
+  font-size: 1.4rem;
+}
+
+.commons__green {
+  color: green;
+}
+
+.commons__red {
+  color: red;
+}
+
+.commons__orange {
+  color: orange;
+}
+.div-table {
+  grid-column: center-start / center-end;
+  
+  &__header {
+    margin-bottom: 3rem;
+  }
+  
+  &__main {
+    display: grid;
+    
+    @media only screen and (max-width: $bp-large) {
+      grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    }
+  }
+  
+  &__row {
+    align-items: center;
+    border-radius: .3rem;
+    display: grid;
+    grid-template-columns: min-content repeat(3, 1fr) min-content;
+    grid-column-gap: 3rem;
+    padding: 2rem;
+    position: relative;
+    transition: all .2s ease-in;
+    
+    &:not(:last-child)::after {
+      background-color: rgba(#747474, .1);
+      bottom: 0;
+      content: '';
+      height: .1rem;
+      position: absolute;
+      width: 100%;
+    }
+    
+    &:hover {
+      box-shadow: 0 1rem 2rem rgba(#747474, .1);
+      transform: scale(1.01);
+    }
+    
+    @media only screen and (max-width: $bp-large) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, min-content);
+      justify-items: center;
+      
+      &:not(:last-child)::after {
+        background-color: rgba(#747474, .1);
+        right: 0;
+        height: 100%;
+        width: .1rem;
+      }
+    }
+  }
+  
+  &__img {
+    border-radius: 50%;
+    height: 4rem;
+    
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 1 / 1;
+      grid-row: 1 / 2;
+  
+    }
+  }
+  
+  &__text {
+    font-size: 1.8rem;
+    
+    &--primary {
+      color: darken(#747474, 10%);
+      font-weight: 700;
+    }
+    
+    &--secondary {
+      font-size: 1rem;
+      text-align: center;
+    }
+    
+    &--left {
+      text-align: left;
+    }
+      
+    &--center {
+      text-align: center;
+    }
+    
+    &--right {
+      text-align: right;
+    }
+  }
+  
+  &__actions {
+    align-items: center;
+    display: flex;
+    
+          
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 1 / 1;
+      grid-row: 1 / 2;
+      justify-self: end;
+    }
+  }
+}
+.div-table__row {
+  align-items: center;
+  border-radius: .3rem;
+  width:140%;
+  margin-left: -20%;
+  display: grid;
+  grid-template-columns: min-content repeat(3, 1fr) min-content;
+  grid-column-gap: 3rem;
+  padding: 2rem;
+  position: relative;
+  transition: all .2s ease-in;
+  background-color: #FFF;
+}
+.div-table__main {
+  display: grid;
+  height:0vh;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+.app-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: dodgerblue;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border-bottom: 2px solid dodgerblue;
+  padding-bottom: 1rem;
+}
+
+.app-heading::after {
+  content: "";
+  display: block;
+  width: 50%;
+  margin: 0.5rem auto;
+  border-bottom: 2px solid dodgerblue;
+}
+.cv{
+  margin-top: 55%;
+  margin-left: -25%;
+}

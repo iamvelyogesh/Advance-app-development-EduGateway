@@ -1,0 +1,91 @@
+.header {
+  color: $white;
+
+  .heading-primary {
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
+
+  .subheading {
+    font-size: 1.6rem;
+  }
+}
+
+.banner {
+  background-color: $blue;
+  color: $white;
+  font-size: 1.6rem;
+
+  &-text--primary {
+    font-weight: 600;
+  }
+  &-text--secondary {
+    font-weight: 400;
+  }
+}
+
+.form {
+  background-color: $white;
+
+  input {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+
+  button {
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  &-terms--text {
+    color: $grayishBlue;
+  }
+
+  &-terms--link {
+    text-decoration: none;
+    color: $red;
+    font-weight: 600;
+  }
+
+  .error-text {
+    color: $red;
+    font-style: italic;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+  }
+}
+
+.form-submiting-text {
+  font-size: 2rem;
+  color: $white;
+}
+
+.form-success-text {
+  font-size: 2rem;
+  color: $white;
+}
+
+@media screen and (max-width: 1040px) {
+  .header {
+    .heading-primary {
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+
+    .subheading {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    .heading-primary {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+  }
+}

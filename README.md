@@ -42,8 +42,7 @@ Your users should be able to:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone [frontend_repository_url]
-cd frontend
+git clone https://github.com/iamvelyogesh/Advance-app-development-EduGateway.git
 ```
 ### Step 2: Install Dependencies
 ```
@@ -59,10 +58,16 @@ Now, your frontend development server is up and running. You can access it via h
 
 
 ## Backend Setup
-### Step 1: Install Maven
+
+### Route to Backend file path
+```
+cd vel
+```
+
+### Step 2: Install Maven
 Download and install Maven from the official website: [Apache Maven Installation](https://maven.apache.org/install.html)
 
-### Install Dependencies
+### Step 3: Install Dependencies
 Ensure that you have the following dependencies installed:
 
 - Spring Boot DevTools
@@ -74,7 +79,7 @@ Ensure that you have the following dependencies installed:
 - 
 Add these dependencies to your `pom.xml` file or include them via Maven command line.
 
-### Step 3: Run the Backend
+### Step 4: Run the Backend
 Navigate to your backend directory and run the following command:
 
 ```bash

@@ -66,9 +66,9 @@ For any inquiries or assistance, feel free to reach out to our support team at s
 ## Let's Connect
 Stay updated with the latest news and developments by following us on social media:
 
-. [Twitter](https://twitter.com/cbvelyogesh)
-. [Facebook](https://www.facebook.com/vel.yogesh/)
-. [Instagram](https://www.instagram.com/iamvelyogesh)
+- [Twitter](https://twitter.com/cbvelyogesh)
+- [Facebook](https://www.facebook.com/vel.yogesh/)
+- [Instagram](https://www.instagram.com/iamvelyogesh)
 We value your feedback and strive to continuously enhance your experience with EduGateway.
 
 Start your journey with EduGateway today and pave the way for a brighter future! 🎓✨
